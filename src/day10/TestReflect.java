@@ -12,7 +12,7 @@ public class TestReflect {
 		p.show();
 	}
 	
-	public void test1() throws Exception{
+	public void test1() throws Exception{//hello world
 		Class clazz = Class.forName("day10.Person");
 		Constructor cons = clazz.getDeclaredConstructor(String.class,int.class);
 		cons.setAccessible(true);
@@ -47,7 +47,6 @@ public class TestReflect {
 		Person p = (Person)obj;
 		
 		Method m1 = clazz.getDeclaredMethod("showName");
-		String name = 
 	
 	}
 }
