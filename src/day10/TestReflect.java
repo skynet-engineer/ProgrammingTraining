@@ -36,7 +36,7 @@ public class TestReflect {
 		Field f2 = clazz.getDeclaredField("age");
 		f2.setAccessible(true);
 		f2.set(p, 18);
-		//�൱�ڵ���getAge()����
+		//相当于调用getAge()方法
 		System.out.println(f2.get(p));
 		System.out.println(p);
 	}
@@ -47,6 +47,5 @@ public class TestReflect {
 		Person p = (Person)obj;
 		
 		Method m1 = clazz.getDeclaredMethod("showName");
-	
 	}
 }
