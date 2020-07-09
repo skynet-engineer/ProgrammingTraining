@@ -47,5 +47,7 @@ public class TestReflect {
 		Person p = (Person)obj;
 		
 		Method m1 = clazz.getDeclaredMethod("showName");
+		
+		System.out.println("hello");
 	}
 }
